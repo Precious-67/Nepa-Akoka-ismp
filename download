@@ -1,0 +1,10 @@
+# Environment variables (contains your real password — never upload this)
+.env
+
+# Python cache files
+__pycache__/
+*.pyc
+
+# OS junk files
+.DS_Store
+Thumbs.db

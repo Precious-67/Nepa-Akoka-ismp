@@ -1,0 +1,937 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_43e44a77a5ad7b03137ff5631bea4884 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_43e44a77a5ad7b03137ff5631bea4884" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_43e44a77a5ad7b03137ff5631bea4884 = L.map(
+                "map_43e44a77a5ad7b03137ff5631bea4884",
+                {
+                    center: [6.517, 3.398],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 15,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_c7ad28b670db682ce9b1ebabf5c73e9b = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_c7ad28b670db682ce9b1ebabf5c73e9b.addTo(map_43e44a77a5ad7b03137ff5631bea4884);
+        
+    
+            var marker_8f50f642325b01e6d7cbca5193d5d963 = L.marker(
+                [6.519, 3.3968],
+                {
+}
+            ).addTo(map_43e44a77a5ad7b03137ff5631bea4884);
+        
+    
+            var icon_1676a6d60e0972864db6698c3ccef3a2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_adb9dec265ad0164f2c8c7871c69c09e = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_b04af11c3c85db650f9c1fa10558f536 = $(`<div id="html_b04af11c3c85db650f9c1fa10558f536" style="width: 100.0%; height: 100.0%;">     <b>Station ID:</b> GUEST-HOUSE-RMU<br>     <b>Ring Cluster:</b> RING 3<br>     <b>Status:</b> OK     </div>`)[0];
+                popup_adb9dec265ad0164f2c8c7871c69c09e.setContent(html_b04af11c3c85db650f9c1fa10558f536);
+            
+        
+
+        marker_8f50f642325b01e6d7cbca5193d5d963.bindPopup(popup_adb9dec265ad0164f2c8c7871c69c09e)
+        ;
+
+        
+    
+    
+                marker_8f50f642325b01e6d7cbca5193d5d963.setIcon(icon_1676a6d60e0972864db6698c3ccef3a2);
+            
+    
+            var marker_b14847474088acd291e7d5c01dac75f2 = L.marker(
+                [6.5121, 3.3915],
+                {
+}
+            ).addTo(map_43e44a77a5ad7b03137ff5631bea4884);
+        
+    
+            var icon_8cbd9f5e48a8d3f0f3c5a0b574d69352 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_207ae5c90a0a151f756d7b73e7ff03a7 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_a5378d052707a93588dd0e0283b016ca = $(`<div id="html_a5378d052707a93588dd0e0283b016ca" style="width: 100.0%; height: 100.0%;">     <b>Station ID:</b> ISL-RMU<br>     <b>Ring Cluster:</b> RING 4<br>     <b>Status:</b> OK     </div>`)[0];
+                popup_207ae5c90a0a151f756d7b73e7ff03a7.setContent(html_a5378d052707a93588dd0e0283b016ca);
+            
+        
+
+        marker_b14847474088acd291e7d5c01dac75f2.bindPopup(popup_207ae5c90a0a151f756d7b73e7ff03a7)
+        ;
+
+        
+    
+    
+                marker_b14847474088acd291e7d5c01dac75f2.setIcon(icon_8cbd9f5e48a8d3f0f3c5a0b574d69352);
+            
+    
+            var marker_42907e62e4deb3941840159389580590 = L.marker(
+                [6.5171, 3.3978],
+                {
+}
+            ).addTo(map_43e44a77a5ad7b03137ff5631bea4884);
+        
+    
+            var icon_b3980de27f63a5a7b9db35879d9aad59 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5d893a079a4a955c3871e09510645328 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_d39eed6c8515da504b2505dd9b1157e6 = $(`<div id="html_d39eed6c8515da504b2505dd9b1157e6" style="width: 100.0%; height: 100.0%;">     <b>Station ID:</b> GTBANK-RMU<br>     <b>Ring Cluster:</b>  RING 3<br>     <b>Status:</b> OK     </div>`)[0];
+                popup_5d893a079a4a955c3871e09510645328.setContent(html_d39eed6c8515da504b2505dd9b1157e6);
+            
+        
+
+        marker_42907e62e4deb3941840159389580590.bindPopup(popup_5d893a079a4a955c3871e09510645328)
+        ;
+
+        
+    
+    
+                marker_42907e62e4deb3941840159389580590.setIcon(icon_b3980de27f63a5a7b9db35879d9aad59);
+            
+    
+            var marker_348112bb21710e5117da149428f83461 = L.marker(
+                [6.5183, 3.3971],
+                {
+}
+            ).addTo(map_43e44a77a5ad7b03137ff5631bea4884);
+        
+    
+            var icon_1244f9f545f6bda9599aec29bcc30a05 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1cab5400d3fc69d62407824ba9bb3098 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_a46d924561d10e1c4d47decd4494d2e4 = $(`<div id="html_a46d924561d10e1c4d47decd4494d2e4" style="width: 100.0%; height: 100.0%;">     <b>Station ID:</b> FIRST-BANK-RMU<br>     <b>Ring Cluster:</b> RING 4<br>     <b>Status:</b> OK     </div>`)[0];
+                popup_1cab5400d3fc69d62407824ba9bb3098.setContent(html_a46d924561d10e1c4d47decd4494d2e4);
+            
+        
+
+        marker_348112bb21710e5117da149428f83461.bindPopup(popup_1cab5400d3fc69d62407824ba9bb3098)
+        ;
+
+        
+    
+    
+                marker_348112bb21710e5117da149428f83461.setIcon(icon_1244f9f545f6bda9599aec29bcc30a05);
+            
+    
+            var marker_05b970588bf3da5bdb876e8afba49456 = L.marker(
+                [6.5212, 3.3934],
+                {
+}
+            ).addTo(map_43e44a77a5ad7b03137ff5631bea4884);
+        
+    
+            var icon_7411632d49ec31be8fa01e6a5275f81b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_985a39bce1dae3222c186fd81b7736a3 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_ecaaa09ddb529ab462ee986c46cd32ca = $(`<div id="html_ecaaa09ddb529ab462ee986c46cd32ca" style="width: 100.0%; height: 100.0%;">     <b>Station ID:</b> TINUBU-CLOSE-RMU<br>     <b>Ring Cluster:</b> RING 1<br>     <b>Status:</b> OK     </div>`)[0];
+                popup_985a39bce1dae3222c186fd81b7736a3.setContent(html_ecaaa09ddb529ab462ee986c46cd32ca);
+            
+        
+
+        marker_05b970588bf3da5bdb876e8afba49456.bindPopup(popup_985a39bce1dae3222c186fd81b7736a3)
+        ;
+
+        
+    
+    
+                marker_05b970588bf3da5bdb876e8afba49456.setIcon(icon_7411632d49ec31be8fa01e6a5275f81b);
+            
+    
+            var marker_be152cafd054466e8e92f2586b87fdec = L.marker(
+                [6.3046, 3.235],
+                {
+}
+            ).addTo(map_43e44a77a5ad7b03137ff5631bea4884);
+        
+    
+            var icon_1d01941c9358f234e6ea1bbceea8c811 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_98f37a7f908035e6d8e06547f32d59ab = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_d7eadd13b432de6b336a9c6f01168440 = $(`<div id="html_d7eadd13b432de6b336a9c6f01168440" style="width: 100.0%; height: 100.0%;">     <b>Station ID:</b> JAJA-RMU<br>     <b>Ring Cluster:</b> Ring 3<br>     <b>Status:</b> OK     </div>`)[0];
+                popup_98f37a7f908035e6d8e06547f32d59ab.setContent(html_d7eadd13b432de6b336a9c6f01168440);
+            
+        
+
+        marker_be152cafd054466e8e92f2586b87fdec.bindPopup(popup_98f37a7f908035e6d8e06547f32d59ab)
+        ;
+
+        
+    
+    
+                marker_be152cafd054466e8e92f2586b87fdec.setIcon(icon_1d01941c9358f234e6ea1bbceea8c811);
+            
+    
+            var marker_1b226e8af515972981cdd3fcb8629ecf = L.marker(
+                [6.5182, 3.3919],
+                {
+}
+            ).addTo(map_43e44a77a5ad7b03137ff5631bea4884);
+        
+    
+            var icon_4cbb23570af92072dbba7ac53ed46f06 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_319746bd9b2c041e5f57869429d6881c = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_b542567b46872689331bbedefce40ed6 = $(`<div id="html_b542567b46872689331bbedefce40ed6" style="width: 100.0%; height: 100.0%;">     <b>Station ID:</b> UNILAG-CONSULT-RMU<br>     <b>Ring Cluster:</b> RING 4<br>     <b>Status:</b> OK     </div>`)[0];
+                popup_319746bd9b2c041e5f57869429d6881c.setContent(html_b542567b46872689331bbedefce40ed6);
+            
+        
+
+        marker_1b226e8af515972981cdd3fcb8629ecf.bindPopup(popup_319746bd9b2c041e5f57869429d6881c)
+        ;
+
+        
+    
+    
+                marker_1b226e8af515972981cdd3fcb8629ecf.setIcon(icon_4cbb23570af92072dbba7ac53ed46f06);
+            
+    
+            var marker_4c6849e9cfcd9392cfe3d91b5b5b8898 = L.marker(
+                [6.5205, 3.3895],
+                {
+}
+            ).addTo(map_43e44a77a5ad7b03137ff5631bea4884);
+        
+    
+            var icon_a44c1445c410043fe264cd5085629d02 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_cd5a6d9d7d8dab47d31102a937d66b91 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_3645a4ea3abbee1280bedec9801ec35c = $(`<div id="html_3645a4ea3abbee1280bedec9801ec35c" style="width: 100.0%; height: 100.0%;">     <b>Station ID:</b> MULTI-HALL-RMU<br>     <b>Ring Cluster:</b> RING 4<br>     <b>Status:</b> OK     </div>`)[0];
+                popup_cd5a6d9d7d8dab47d31102a937d66b91.setContent(html_3645a4ea3abbee1280bedec9801ec35c);
+            
+        
+
+        marker_4c6849e9cfcd9392cfe3d91b5b5b8898.bindPopup(popup_cd5a6d9d7d8dab47d31102a937d66b91)
+        ;
+
+        
+    
+    
+                marker_4c6849e9cfcd9392cfe3d91b5b5b8898.setIcon(icon_a44c1445c410043fe264cd5085629d02);
+            
+    
+            var marker_1170762fbefe82f7b057e132abb401bb = L.marker(
+                [6.3041, 3.2351],
+                {
+}
+            ).addTo(map_43e44a77a5ad7b03137ff5631bea4884);
+        
+    
+            var icon_c697702e3c54b72a18b25ea5f4a9233d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_66239265e402e6b400e1e430b07fcf69 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_f8573f554df1200a24a1bacd7373f787 = $(`<div id="html_f8573f554df1200a24a1bacd7373f787" style="width: 100.0%; height: 100.0%;">     <b>Station ID:</b> VC-LOUNGE-RMU<br>     <b>Ring Cluster:</b> RING 1<br>     <b>Status:</b> OK     </div>`)[0];
+                popup_66239265e402e6b400e1e430b07fcf69.setContent(html_f8573f554df1200a24a1bacd7373f787);
+            
+        
+
+        marker_1170762fbefe82f7b057e132abb401bb.bindPopup(popup_66239265e402e6b400e1e430b07fcf69)
+        ;
+
+        
+    
+    
+                marker_1170762fbefe82f7b057e132abb401bb.setIcon(icon_c697702e3c54b72a18b25ea5f4a9233d);
+            
+    
+            var marker_c4ed00af52c2a6add790a5e14213b2ab = L.marker(
+                [6.5209, 3.3941],
+                {
+}
+            ).addTo(map_43e44a77a5ad7b03137ff5631bea4884);
+        
+    
+            var icon_5f5ccd08fa5afcf71ceca5bb7d58548c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b1c68065209d74f55c2333f43ada39f6 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_d9b3b9d51fe668d4a447a9c2d79ce1e6 = $(`<div id="html_d9b3b9d51fe668d4a447a9c2d79ce1e6" style="width: 100.0%; height: 100.0%;">     <b>Station ID:</b> AGERIGE-ODO-RMU<br>     <b>Ring Cluster:</b> RING 1<br>     <b>Status:</b> OK     </div>`)[0];
+                popup_b1c68065209d74f55c2333f43ada39f6.setContent(html_d9b3b9d51fe668d4a447a9c2d79ce1e6);
+            
+        
+
+        marker_c4ed00af52c2a6add790a5e14213b2ab.bindPopup(popup_b1c68065209d74f55c2333f43ada39f6)
+        ;
+
+        
+    
+    
+                marker_c4ed00af52c2a6add790a5e14213b2ab.setIcon(icon_5f5ccd08fa5afcf71ceca5bb7d58548c);
+            
+    
+            var marker_c5ae54508f87af7b6df893d202e4e156 = L.marker(
+                [6.5204, 3.3928],
+                {
+}
+            ).addTo(map_43e44a77a5ad7b03137ff5631bea4884);
+        
+    
+            var icon_4fe8b4b2d1abbc766aa92998387d5eca = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_563996edcf2af738ab51a3f43882b9e7 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_0423863591932c2bd54232d967822cc4 = $(`<div id="html_0423863591932c2bd54232d967822cc4" style="width: 100.0%; height: 100.0%;">     <b>Station ID:</b> ALVAN-IKOKU-RMU<br>     <b>Ring Cluster:</b> RING 1<br>     <b>Status:</b> OK     </div>`)[0];
+                popup_563996edcf2af738ab51a3f43882b9e7.setContent(html_0423863591932c2bd54232d967822cc4);
+            
+        
+
+        marker_c5ae54508f87af7b6df893d202e4e156.bindPopup(popup_563996edcf2af738ab51a3f43882b9e7)
+        ;
+
+        
+    
+    
+                marker_c5ae54508f87af7b6df893d202e4e156.setIcon(icon_4fe8b4b2d1abbc766aa92998387d5eca);
+            
+    
+            var marker_8f1bc633aa5186bd9b50ff35bd335a71 = L.marker(
+                [6.5198, 3.392],
+                {
+}
+            ).addTo(map_43e44a77a5ad7b03137ff5631bea4884);
+        
+    
+            var icon_42caa01f0592a716df96b26d18c0ff8a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f1c87d60eb9b1af049a18d3d7f4bc79d = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_b2c8b63b1e93dee896ebf19eb5ca0407 = $(`<div id="html_b2c8b63b1e93dee896ebf19eb5ca0407" style="width: 100.0%; height: 100.0%;">     <b>Station ID:</b> FAGUNWA-RMU<br>     <b>Ring Cluster:</b> RING 4<br>     <b>Status:</b> OK     </div>`)[0];
+                popup_f1c87d60eb9b1af049a18d3d7f4bc79d.setContent(html_b2c8b63b1e93dee896ebf19eb5ca0407);
+            
+        
+
+        marker_8f1bc633aa5186bd9b50ff35bd335a71.bindPopup(popup_f1c87d60eb9b1af049a18d3d7f4bc79d)
+        ;
+
+        
+    
+    
+                marker_8f1bc633aa5186bd9b50ff35bd335a71.setIcon(icon_42caa01f0592a716df96b26d18c0ff8a);
+            
+    
+            var marker_1754171d7e050a6ddb016454be4d80c6 = L.marker(
+                [6.5202, 3.3883],
+                {
+}
+            ).addTo(map_43e44a77a5ad7b03137ff5631bea4884);
+        
+    
+            var icon_f623577f34e5b9de468989729006513a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_37ff61640e43692caa4c1d9f84f1ee61 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_ef5716f0f94a773a8f0706d65de8fae2 = $(`<div id="html_ef5716f0f94a773a8f0706d65de8fae2" style="width: 100.0%; height: 100.0%;">     <b>Station ID:</b> SPORT-CENTRE-RMU<br>     <b>Ring Cluster:</b> RING 4<br>     <b>Status:</b> OK     </div>`)[0];
+                popup_37ff61640e43692caa4c1d9f84f1ee61.setContent(html_ef5716f0f94a773a8f0706d65de8fae2);
+            
+        
+
+        marker_1754171d7e050a6ddb016454be4d80c6.bindPopup(popup_37ff61640e43692caa4c1d9f84f1ee61)
+        ;
+
+        
+    
+    
+                marker_1754171d7e050a6ddb016454be4d80c6.setIcon(icon_f623577f34e5b9de468989729006513a);
+            
+    
+            var marker_1d4109dd82a10fb82234e0c093c8fc34 = L.marker(
+                [6.3023, 3.2349],
+                {
+}
+            ).addTo(map_43e44a77a5ad7b03137ff5631bea4884);
+        
+    
+            var icon_c32a182d212ba71380b09f700f8f7f59 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_27d7b64e04e4730523b3a3a8d46d4d08 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_09f6023f7ede977532d7a363d308f66a = $(`<div id="html_09f6023f7ede977532d7a363d308f66a" style="width: 100.0%; height: 100.0%;">     <b>Station ID:</b> HIGH-RISE-AUX-RMU<br>     <b>Ring Cluster:</b> RING 1<br>     <b>Status:</b> OK     </div>`)[0];
+                popup_27d7b64e04e4730523b3a3a8d46d4d08.setContent(html_09f6023f7ede977532d7a363d308f66a);
+            
+        
+
+        marker_1d4109dd82a10fb82234e0c093c8fc34.bindPopup(popup_27d7b64e04e4730523b3a3a8d46d4d08)
+        ;
+
+        
+    
+    
+                marker_1d4109dd82a10fb82234e0c093c8fc34.setIcon(icon_c32a182d212ba71380b09f700f8f7f59);
+            
+    
+            var marker_4181c127f020dbc55ca269f01f08aad5 = L.marker(
+                [6.522, 3.391],
+                {
+}
+            ).addTo(map_43e44a77a5ad7b03137ff5631bea4884);
+        
+    
+            var icon_93ab9fa3d1d0df196cd36fdcd9dd9abe = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_cc13796abba8d325b1c15c853ad81360 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_12dc1a6df80994f5e92f1685db906d60 = $(`<div id="html_12dc1a6df80994f5e92f1685db906d60" style="width: 100.0%; height: 100.0%;">     <b>Station ID:</b> OZOLUA-ROAD-RMU<br>     <b>Ring Cluster:</b> RING 1<br>     <b>Status:</b> OK     </div>`)[0];
+                popup_cc13796abba8d325b1c15c853ad81360.setContent(html_12dc1a6df80994f5e92f1685db906d60);
+            
+        
+
+        marker_4181c127f020dbc55ca269f01f08aad5.bindPopup(popup_cc13796abba8d325b1c15c853ad81360)
+        ;
+
+        
+    
+    
+                marker_4181c127f020dbc55ca269f01f08aad5.setIcon(icon_93ab9fa3d1d0df196cd36fdcd9dd9abe);
+            
+    
+            var marker_13e1add84cbb634ba049f7f78fa2396b = L.marker(
+                [6.5218, 3.3922],
+                {
+}
+            ).addTo(map_43e44a77a5ad7b03137ff5631bea4884);
+        
+    
+            var icon_949ae8959d776f33de51a2ea5e633555 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3c97f1bc9a77104cd6ae7c4b62d063e3 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_e1a78a14543586bebe26883a12064150 = $(`<div id="html_e1a78a14543586bebe26883a12064150" style="width: 100.0%; height: 100.0%;">     <b>Station ID:</b> KOSOKO-DRIVE-RMU<br>     <b>Ring Cluster:</b> RING 1<br>     <b>Status:</b> OK     </div>`)[0];
+                popup_3c97f1bc9a77104cd6ae7c4b62d063e3.setContent(html_e1a78a14543586bebe26883a12064150);
+            
+        
+
+        marker_13e1add84cbb634ba049f7f78fa2396b.bindPopup(popup_3c97f1bc9a77104cd6ae7c4b62d063e3)
+        ;
+
+        
+    
+    
+                marker_13e1add84cbb634ba049f7f78fa2396b.setIcon(icon_949ae8959d776f33de51a2ea5e633555);
+            
+    
+            var marker_aca84fb6421bcab65b264be82bfb9f08 = L.marker(
+                [6.3041, 3.2344],
+                {
+}
+            ).addTo(map_43e44a77a5ad7b03137ff5631bea4884);
+        
+    
+            var icon_141a767bfb47b697436c6ef6a8025a6c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "bolt",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5861cc41234d60d870142a2be50573e3 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_3bcb3cde8619ce2c575dd5489c966253 = $(`<div id="html_3bcb3cde8619ce2c575dd5489c966253" style="width: 100.0%; height: 100.0%;">     <b>Station ID:</b> MEDICAL-QTRS-RMU<br>     <b>Ring Cluster:</b> Ring 1<br>     <b>Status:</b> OK     </div>`)[0];
+                popup_5861cc41234d60d870142a2be50573e3.setContent(html_3bcb3cde8619ce2c575dd5489c966253);
+            
+        
+
+        marker_aca84fb6421bcab65b264be82bfb9f08.bindPopup(popup_5861cc41234d60d870142a2be50573e3)
+        ;
+
+        
+    
+    
+                marker_aca84fb6421bcab65b264be82bfb9f08.setIcon(icon_141a767bfb47b697436c6ef6a8025a6c);
+            
+    
+            var marker_773f63383dfd63df2dbd7d8f6fb7a7ee = L.marker(
+                [6.3027, 3.2415],
+                {
+}
+            ).addTo(map_43e44a77a5ad7b03137ff5631bea4884);
+        
+    
+            var icon_0d92db6a16764a7831fba693118ec03d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_136825d4f55e8c9df9c52aca8b35ccfa = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_d0ea23ddae9f9cb2196d91ee665157b1 = $(`<div id="html_d0ea23ddae9f9cb2196d91ee665157b1" style="width: 100.0%; height: 100.0%;">     <b>Station ID:</b> HIGH-RISE-BLKA-RMU<br>     <b>Ring Cluster:</b> RING 1<br>     <b>Status:</b> FAULT     </div>`)[0];
+                popup_136825d4f55e8c9df9c52aca8b35ccfa.setContent(html_d0ea23ddae9f9cb2196d91ee665157b1);
+            
+        
+
+        marker_773f63383dfd63df2dbd7d8f6fb7a7ee.bindPopup(popup_136825d4f55e8c9df9c52aca8b35ccfa)
+        ;
+
+        
+    
+    
+                marker_773f63383dfd63df2dbd7d8f6fb7a7ee.setIcon(icon_0d92db6a16764a7831fba693118ec03d);
+            
+    
+            var marker_7aecf6367e65bd496ffde370f010600a = L.marker(
+                [6.5182, 3.3968],
+                {
+}
+            ).addTo(map_43e44a77a5ad7b03137ff5631bea4884);
+        
+    
+            var icon_2a8b68a72bc9762cbbe4e9ee96c8d319 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a1ae30eea1fe1ae02e37695e88c8b47f = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_2a161ec7903b81c88cc6690798581b9d = $(`<div id="html_2a161ec7903b81c88cc6690798581b9d" style="width: 100.0%; height: 100.0%;">     <b>Station ID:</b> ACCESS-BANK-RMU<br>     <b>Ring Cluster:</b> RING 4<br>     <b>Status:</b> FAULT     </div>`)[0];
+                popup_a1ae30eea1fe1ae02e37695e88c8b47f.setContent(html_2a161ec7903b81c88cc6690798581b9d);
+            
+        
+
+        marker_7aecf6367e65bd496ffde370f010600a.bindPopup(popup_a1ae30eea1fe1ae02e37695e88c8b47f)
+        ;
+
+        
+    
+    
+                marker_7aecf6367e65bd496ffde370f010600a.setIcon(icon_2a8b68a72bc9762cbbe4e9ee96c8d319);
+            
+    
+            var marker_f0a0c680663d5d23f29f01fb856af660 = L.marker(
+                [6.5182, 3.3879],
+                {
+}
+            ).addTo(map_43e44a77a5ad7b03137ff5631bea4884);
+        
+    
+            var icon_d9556ec77fe907e90570b27f0fdc4ad9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f942cade0ae2720387b39b7140ddbb1b = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_76646a08c6f277fec0a7928b0b46d4c5 = $(`<div id="html_76646a08c6f277fec0a7928b0b46d4c5" style="width: 100.0%; height: 100.0%;">     <b>Station ID:</b> CHAPEL-RMU<br>     <b>Ring Cluster:</b> RING 4<br>     <b>Status:</b> FAULT     </div>`)[0];
+                popup_f942cade0ae2720387b39b7140ddbb1b.setContent(html_76646a08c6f277fec0a7928b0b46d4c5);
+            
+        
+
+        marker_f0a0c680663d5d23f29f01fb856af660.bindPopup(popup_f942cade0ae2720387b39b7140ddbb1b)
+        ;
+
+        
+    
+    
+                marker_f0a0c680663d5d23f29f01fb856af660.setIcon(icon_d9556ec77fe907e90570b27f0fdc4ad9);
+            
+    
+            var marker_132fabe6b978b37dfb6e0c7e42b35c85 = L.marker(
+                [6.5195, 3.3937],
+                {
+}
+            ).addTo(map_43e44a77a5ad7b03137ff5631bea4884);
+        
+    
+            var icon_63cf708c15700a804d75f3486ef96a76 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2fc9b90a1402561756cd6375c75e4dae = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_5e7df9efd353d35c8ad1449022201cb9 = $(`<div id="html_5e7df9efd353d35c8ad1449022201cb9" style="width: 100.0%; height: 100.0%;">     <b>Station ID:</b> CITS-RMU<br>     <b>Ring Cluster:</b> RING 1<br>     <b>Status:</b> FAULT     </div>`)[0];
+                popup_2fc9b90a1402561756cd6375c75e4dae.setContent(html_5e7df9efd353d35c8ad1449022201cb9);
+            
+        
+
+        marker_132fabe6b978b37dfb6e0c7e42b35c85.bindPopup(popup_2fc9b90a1402561756cd6375c75e4dae)
+        ;
+
+        
+    
+    
+                marker_132fabe6b978b37dfb6e0c7e42b35c85.setIcon(icon_63cf708c15700a804d75f3486ef96a76);
+            
+    
+            var marker_56d4fc6eefbd225dd52f00dd93a56221 = L.marker(
+                [6.5192, 3.3927],
+                {
+}
+            ).addTo(map_43e44a77a5ad7b03137ff5631bea4884);
+        
+    
+            var icon_fbcff5fc41b3083f9c210aed70a4a887 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fdf5981f1e90fe8374345dc9cc80792d = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_6ed6d8e53f0e8f41ddcb949b3f7a8998 = $(`<div id="html_6ed6d8e53f0e8f41ddcb949b3f7a8998" style="width: 100.0%; height: 100.0%;">     <b>Station ID:</b> SODEINDE-RMU<br>     <b>Ring Cluster:</b> RING 4<br>     <b>Status:</b> FAULT     </div>`)[0];
+                popup_fdf5981f1e90fe8374345dc9cc80792d.setContent(html_6ed6d8e53f0e8f41ddcb949b3f7a8998);
+            
+        
+
+        marker_56d4fc6eefbd225dd52f00dd93a56221.bindPopup(popup_fdf5981f1e90fe8374345dc9cc80792d)
+        ;
+
+        
+    
+    
+                marker_56d4fc6eefbd225dd52f00dd93a56221.setIcon(icon_fbcff5fc41b3083f9c210aed70a4a887);
+            
+</script>
+</html>
