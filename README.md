@@ -5,13 +5,13 @@
 **Team:** Group 23 — EchoWork
 **Session:** 2025/2026
 
-## 📖 Overview
+## Overview
 
 The University of Lagos, Akoka campus runs its own 11kV power distribution network (nicknamed "NEPA Akoka"), made up of 4 rings, 8 feeders, and roughly 40–50 substations spread across campus — including several underground ones. Right now, faults (short circuits, overloads, insulation failures) are only discovered *after* the lights go out, because there's no digital monitoring in place — engineers have to physically patrol cables and inspect substations by hand.
 
 This project designs (as a systems-analysis case study, not a physical deployment) an **Integrated Substation Management Platform** that would replace this manual, reactive process with a centralized, GIS-based, real-time monitoring system.
 
-## 🎯 What the System Is Designed to Do
+## What the System Is Designed to Do
 
 - **GIS Mapping Module** — Plots the exact location of every substation (including underground ones) on an interactive map, so engineers can see the whole grid at a glance.
 - **Real-Time Monitoring Module** — Tracks live status per substation (voltage, load, temperature) from a single dashboard instead of manual site visits.
@@ -19,7 +19,7 @@ This project designs (as a systems-analysis case study, not a physical deploymen
 - **Predictive Health Analytics Module** — Looks at historical data to flag equipment at risk of failure *before* it fails, enabling planned maintenance instead of emergency repairs.
 - **Reporting Module** — Turns raw monitoring data into performance reports for planning and budget decisions.
 
-## 🗂️ What's in This Repository
+## What's in This Repository
 
 | File | What it does |
 |---|---|
@@ -31,13 +31,13 @@ This project designs (as a systems-analysis case study, not a physical deploymen
 | `substation_data.csv` | Sample geospatial + capacity data for ~40 UNILAG substations, used to seed the database |
 | `unilag_grid_map.html` | A pre-generated example of the interactive map output |
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Python** (SQLAlchemy, GeoAlchemy2, Folium)
 - **PostgreSQL + PostGIS** (spatial database for storing substation locations)
 - **QGIS-style geospatial mapping concepts**
 
-## ⚙️ Running This Locally
+## Running This Locally
 
 1. Install PostgreSQL with the PostGIS extension enabled, and create a database.
 2. Install the required Python packages:
