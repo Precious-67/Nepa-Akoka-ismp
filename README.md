@@ -58,10 +58,10 @@ This project designs (as a systems-analysis case study, not a physical deploymen
 
 > **Note:** This project was built as a systems-design case study for a university course. The fault detection here is *simulated* (random), since no physical IoT sensors were deployed on the real NEPA Akoka grid as part of this study.
 
-## 👥 Team
+## Team
 
 Group 23 — EchoWork, CSC 316, University of Lagos
 
-## 🔒 Security Note
+## Security Note
 
 Database credentials are loaded from a local `.env` file (excluded from this repo via `.gitignore`) rather than being hardcoded — see `.env.example` for the format.
